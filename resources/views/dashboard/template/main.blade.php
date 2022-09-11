@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>SB Admin 2 - Blank</title>
+    <link href={{asset("favicon.ico")}} rel="icon">
 
     {{-- bootstrap --}}
 
