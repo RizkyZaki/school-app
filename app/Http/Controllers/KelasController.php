@@ -42,7 +42,7 @@ class KelasController extends Controller
     {
         $data = $request->validate([
             'nama_kelas' => 'required|unique:kelas',
-            'jurusan' => 'required|unique:kelas',
+            'jurusan' => 'required',
         ]);
 
         Kelas::create($data);

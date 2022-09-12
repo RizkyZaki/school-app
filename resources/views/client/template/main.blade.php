@@ -99,27 +99,8 @@
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
-          <h4 class="text-white mb-3">Gallery</h4>
-          <div class="row g-2 pt-2">
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
-            </div>
-          </div>
+          <h4 class="text-white mb-3">Heyooo OMAGA</h4>
+          <p>Biingung Mau dikasih apa </p>
         </div>
         <div class="col-lg-3 col-md-6">
           <h4 class="text-white mb-3">Newsletter</h4>
@@ -138,7 +119,7 @@
             &copy; <a class="border-bottom" href="#">School App</a>, All Right Reserved.
 
             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            Designed By <a class="border-bottom" href="https://www.instagram.com/_fuyuko01/">Zaki</a><br><br>
+            Designed By <a class="border-bottom" href="https://www.instagram.com/_fuyuko01/">FUYUKO (ZAKI)</a><br><br>
             Distributed By <a class="border-bottom" href="#">Apa coba Kepo ah</a>
           </div>
           <div class="col-md-6 text-center text-md-end">

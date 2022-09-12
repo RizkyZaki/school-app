@@ -14,7 +14,7 @@
           <div class="position-relative overflow-hidden">
             <img class="img-fluid" src={{asset("template/img/course-2.jpg")}} alt="">
             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-              <a href="{{url('mapels/'.$item->id)}}" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+              <a href="{{url('materi/mapel/'.$item->id)}}" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
                 style="border-radius: 30px 0 0 30px;">Semua Materi</a>
             </div>
           </div>
