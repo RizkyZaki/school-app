@@ -60,6 +60,8 @@
         <a href=" {{url('listMapel')}}" class="nav-item nav-link {{Request::is('listMapel') ? 'active' : ''}}">Mapel</a>
         <a href=" {{url('listMateri')}}" class="nav-item nav-link" {{Request::is('listMateri') ? 'active' : ''
           }}">Materi</a>
+        <a href=" {{url('listKelas')}}" class="nav-item nav-link" {{Request::is('listKelas') ? 'active' : ''
+          }}">Kelas</a>
         <a href="{{url('contact')}}" class="nav-item nav-link {{Request::is('contact') ? 'active' : ''}}">Contact</a>
       </div>
       <a href={{url("login")}} class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Login<i

@@ -26,8 +26,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ClientController::class, 'index']);
 Route::get('/detail/{materi}', [ClientController::class, 'detail']);
-Route::get('/mapels/{id}', [ClientController::class, 'mapels']);
+Route::get('/materi/mapel/{id}', [ClientController::class, 'mapels']);
+Route::get('/materi/kelas/{id}', [ClientController::class, 'kelass']);
 Route::get('/listMateri', [ClientController::class, 'allMateri']);
+Route::get('/listKelas', [ClientController::class, 'allKelas']);
 Route::get('/listMapel', [ClientController::class, 'allMapel']);
 Route::get('/about', [ClientController::class, 'about']);
 Route::get('/contact', [ClientController::class, 'contact']);

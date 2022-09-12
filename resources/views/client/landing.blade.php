@@ -142,6 +142,11 @@
             <h5 class="card-title text-center fw-bold">{{$item->jurusan}}</h5>
             <p class="card-title text-center fw-bold">{{$item->nama_kelas}}</p>
           </div>
+          <div class="d-flex border-top">
+            <a href="{{url('materi/kelas/'.$item->id)}}" class="flex-fill text-center border-end py-2"><i
+                class="fa fa-book text-primary me-2"></i>Lihat
+              Materi</a>
+          </div>
         </div>
       </div>
       @endforeach
@@ -165,7 +170,7 @@
           <div class="position-relative overflow-hidden">
             <img class="img-fluid" src={{asset("template/img/course-2.jpg")}} alt="">
             <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-              <a href="{{url('mapels/'.$item->id)}}" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+              <a href="{{url('materi/mapel/'.$item->id)}}" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
                 style="border-radius: 30px 0 0 30px;">Semua Materi</a>
             </div>
           </div>
@@ -211,6 +216,7 @@
               <h3 class="mb-0">{{$item->judul}}</h3>
               <div class="mb-3">
                 <p>{{$item->mapel->nama_mapel}}</p>
+                <p>Kelas : {{$item->kelas->nama_kelas}} | {{$item->kelas->jurusan}}</p>
               </div>
             </div>
             <div class="d-flex border-top">

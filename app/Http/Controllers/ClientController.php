@@ -45,12 +45,29 @@ class ClientController extends Controller
         ]);
     }
 
+    public function allKelas()
+    {
+        $kelas = Kelas::all();
+        return view('client.listKelas', [
+            'kelas' => $kelas
+        ]);
+    }
+
     public function mapels($id)
     {
         $mapel = Mapel::find($id);
         return view('client.mapels', [
             'mapel' => $mapel->materi,
             'namaMapel' => $mapel
+        ]);
+    }
+
+    public function kelass($id)
+    {
+        $kelas = Kelas::find($id);
+        return view('client.kelas', [
+            'kelas' => $kelas->materi,
+            'namaKelas' => $kelas
         ]);
     }
 
@@ -62,5 +79,11 @@ class ClientController extends Controller
     public function contact()
     {
         return view('client.contact');
+    }
+    public function navKelas()
+    {
+        return view('client.template.main', [
+            'kelas' => Kelas::all()
+        ]);
     }
 }
