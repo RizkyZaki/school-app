@@ -56,9 +56,9 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav ms-auto p-4 p-lg-0">
         <a href="{{url('/')}}" class="nav-item nav-link {{Request::is('/') ? 'active' : ''}}">Home</a>
-        <a href=" {{url('about')}}" class="nav-item nav-link {{Request::is('about') ? 'active' : ''}}">About</a>
-        <a href=" {{url('listMapel')}}" class="nav-item nav-link {{Request::is('listMapel') ? 'active' : ''}}">Mapel</a>
-        <a href=" {{url('listMateri')}}" class="nav-item nav-link" {{Request::is('listMateri') ? 'active' : ''
+        <a href="{{url('about')}}" class="nav-item nav-link {{Request::is('about') ? 'active' : ''}}">About</a>
+        <a href="{{url('listMapel')}}" class="nav-item nav-link {{Request::is('listMapel') ? 'active' : ''}}">Mapel</a>
+        <a href="{{url('listMateri')}}" class="nav-item nav-link" {{Request::is('listMateri') ? 'active' : ''
           }}">Materi</a>
         <a href=" {{url('listKelas')}}" class="nav-item nav-link" {{Request::is('listKelas') ? 'active' : ''
           }}">Kelas</a>
@@ -80,8 +80,8 @@
       <div class="row g-5">
         <div class="col-lg-3 col-md-6">
           <h4 class="text-white mb-3">Quick Link</h4>
-          <a class="btn btn-link" href="">About Us</a>
-          <a class="btn btn-link" href="">Contact Us</a>
+          <a class="btn btn-link" href="{{url('about')}}">About Us</a>
+          <a class="btn btn-link" href="{{url('contact')}}">Contact Us</a>
           <a class="btn btn-link" href="">Privacy Policy</a>
           <a class="btn btn-link" href="">Terms & Condition</a>
           <a class="btn btn-link" href="">FAQs & Help</a>
