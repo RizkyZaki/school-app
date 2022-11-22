@@ -41,13 +41,13 @@ class KelasController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'nama_kelas' => 'required|unique:kelas',
+            'nama_kelas' => 'required',
             'jurusan' => 'required',
         ]);
 
         Kelas::create($data);
 
-        return redirect('kelas')->with('berhasil', 'Mapel Baru Sudah Ditambahkan');
+        return redirect('kelas')->with('berhasil', 'Kelas Baru Sudah Ditambahkan');
     }
 
     /**

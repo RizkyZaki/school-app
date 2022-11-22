@@ -426,11 +426,73 @@
 
     <!-- Custom scripts for all pages-->
     <script src="{{asset('sb-admin/js/sb-admin-2.min.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: 'Materi Per Bulan',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        '#9C254D',
+                        '#009EFF',
+                        '#7743DB',
+                        '#bd081c',
+                        '#1da1f2',
+                        '#3B5998'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
 
+        const ctxPolar = document.getElementById('myPolarChart').getContext('2d');
+        const myPolarChart = new Chart(ctxPolar, {
+            type: 'polarArea',
+            data: {
+                    datasets: [{
+                        data: [10, 20, 30, 4, 19],
+                        backgroundColor: [
+                            "#000000",
+                            "#3B5998",
+                            "#a6b1b7",
+                            "#1da1f2",
+                            "#bd081c"
+                        ],
+                    }],
+
+                    // These labels appear in the legend and in the tooltips when hovering different arcs
+                    labels: [
+                        'Sejarah',
+                        'MTK',
+                        'B.Indo',
+                        'English',
+                        'Fisika',
+                    ]
+                },
+            options: {
+            }
+        });
+
+    </script>
 </body>
 
 </html>
