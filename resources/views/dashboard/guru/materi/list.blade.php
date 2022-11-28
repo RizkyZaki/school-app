@@ -14,7 +14,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             @endif
-            <a class="btn btn-primary mb-3" href="{{url('materi/create')}}">Add Mapel</a>
+            <a class="btn btn-primary mb-3" href="{{url('materi/create')}}">Add Materi</a>
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>

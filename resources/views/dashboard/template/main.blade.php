@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SCHOOL APP | DASHBOARD</title>
+    <title>SCHOOL APP | Manage Page</title>
     <link href={{asset("favicon.ico")}} rel="icon">
 
     {{-- bootstrap --}}

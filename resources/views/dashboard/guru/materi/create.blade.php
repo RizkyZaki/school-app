@@ -20,16 +20,6 @@
                     </div>
                     @enderror
                 </div>
-                {{-- <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Slug</label>
-                    <input type="text" class="form-control @error('slug') is-invalid @enderror" name="slug"
-                        id="exampleFormControlInput1" placeholder="Nama Mapel">
-                    @error('slug')
-                    <div class="invalid-feedback">
-                        {{ $message }}
-                    </div>
-                    @enderror
-                </div> --}}
                 <div class="mb-3">
                     <label class="form-label" for="category">Kelas</label>
                     <select class="form-select @error('id_kelas') is-invalid @enderror" id="inputGroupSelect01"

@@ -35,6 +35,7 @@ class MateriController extends Controller
         return view('dashboard.guru.materi.create', [
             'kelas' => Kelas::all(),
             'mapel' => Mapel::all(),
+            'title' => 'Add Materi'
         ]);
     }
 

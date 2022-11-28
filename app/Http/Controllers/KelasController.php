@@ -28,7 +28,7 @@ class KelasController extends Controller
     public function create()
     {
         return view('dashboard/admin/kelas/create', [
-            'title' => 'Bikin Mapel'
+            'title' => 'Add Kelas'
         ]);
     }
 
@@ -47,7 +47,7 @@ class KelasController extends Controller
 
         Kelas::create($data);
 
-        return redirect('kelas')->with('berhasil', 'Kelas Baru Sudah Ditambahkan');
+        return redirect('kelas')->with('berhasil', 'Data Baru Sudah Ditambahkan');
     }
 
     /**
@@ -94,7 +94,7 @@ class KelasController extends Controller
 
         $kela->save();
 
-        return redirect('kelas')->with('berhasil', 'Mapel Berhasil diubah');
+        return redirect('kelas')->with('berhasil', 'Data Berhasil diubah');
     }
 
     /**

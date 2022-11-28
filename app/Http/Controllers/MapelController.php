@@ -46,7 +46,7 @@ class MapelController extends Controller
 
         Mapel::create($data);
 
-        return redirect('mapel')->with('berhasil', 'Mapel Baru Sudah Ditambahkan');
+        return redirect('mapel')->with('berhasil', 'Data Baru Sudah Ditambahkan');
     }
 
     /**
@@ -92,7 +92,7 @@ class MapelController extends Controller
 
         $mapel->save();
 
-        return redirect('mapel')->with('berhasil', 'Mapel Berhasil diubah');
+        return redirect('mapel')->with('berhasil', 'Data Berhasil diubah');
     }
 
     /**
@@ -105,6 +105,6 @@ class MapelController extends Controller
     {
 
         Mapel::destroy($mapel->id);
-        return redirect('mapel')->with('berhasil', 'data berhasil dihapus');
+        return redirect('mapel')->with('berhasil', 'Mapel berhasil dihapus');
     }
 }
