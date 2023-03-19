@@ -37,9 +37,9 @@ Route::get('/contact', [ClientController::class, 'contact']);
 
 Route::get('/home', [DashboardController::class, 'home'])->middleware('auth');
 
-Route::resource('mapel', MapelController::class)->middleware(['auth', 'admin']);
+Route::resource('mapel', MapelController::class)->middleware('admin');
 
-Route::resource('kelas', KelasController::class)->middleware(['auth', 'admin']);
+Route::resource('kelas', KelasController::class)->middleware('admin');
 
 Route::resource('materi', MateriController::class)->middleware('auth');
 
